@@ -1,0 +1,3 @@
+id,email,uid,created_at,updated_at,avatar_url,first_name,last_name,external_id,reset_token,domain_id,deleted_at,tac_accepted_at,tagline,locale,unsubscribed,welcomed_at,logged_in_at,config,full_name,sortable_name,uuid,sub_account_id,hris_id,support_user,hire_date,hidden
+1,,bridge_support,2016-11-21 21:17:00.866864,2016-11-21 21:17:00.866864,,,,,,1,,,,,,,,,,,,1,,t,,
+7,jacobs@instructure.com,jacobs@instructure.com,2016-11-21 21:26:25.564319,2016-12-15 21:43:26.194241,,,,,,1,,2016-12-15 15:51:04.777559,,,,,2016-12-15 15:50:56.417357,,,,,,,,,

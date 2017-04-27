@@ -1,0 +1,6 @@
+Bridge Blueprint is an interface for parsing data dump information from bridge
+
+== Installation
+
+gem build bridge_blueprint.gemspec
+gem install bridge_blueprint.{VERSION}
