@@ -1,4 +1,5 @@
 require 'csv'
+require 'zip'
 
 module BridgeBlueprint
   class DataDump

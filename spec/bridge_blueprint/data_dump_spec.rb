@@ -31,7 +31,7 @@ describe BridgeBlueprint::DataDump do
       file.each_row('custom_fields') do |custom_field|
         custom_field_count += 1
       end
-      expect(user_count).to(eq(8))
+      expect(user_count).to(eq(2))
       expect(custom_field_count).to(eq(5))
     end
   end

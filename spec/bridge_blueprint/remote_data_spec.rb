@@ -19,7 +19,7 @@ describe BridgeBlueprint::RemoteData do
       end
     end
 
-    WebMock.stub_request(:get, "https://example.com/fake-file-url").
+    stub_request(:get, "https://example.com/fake-file-url").
        with(:headers => {'Accept'=>'*/*', 'User-Agent'=>'Ruby'}).
        to_return(:status => 200, :body => lambda{|request| File.open(@zipfile_name)}, :headers => {})
   end
