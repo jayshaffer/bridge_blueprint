@@ -18,7 +18,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = BridgeBlueprint::VERSION
 
-  gem.add_runtime_dependency 'bridge_api', '~> 0.0.12'
+  gem.add_runtime_dependency 'bridge_api', '~> 0.1.0'
   gem.add_runtime_dependency 'open_uri_redirections', '~> 0.2.1'
   gem.add_runtime_dependency 'rubyzip', '~> 1.2.1'
 
