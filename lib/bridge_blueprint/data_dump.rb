@@ -26,15 +26,19 @@ module BridgeBlueprint
     def extract_from_zip(name)
       Dir.mktmpdir do |dir|
         path = nil
+        file = nil
         Zip::File.open(@path) do |zip_file|
           zip_file.each do |entry|
             if "#{name.to_s}" == entry.name
               path = "#{dir}/#{entry.name}"
               file = entry.extract(path)
-              yield "#{dir}/#{name}" if block_given?
-              return
+              break
             end
           end
+        end
+        if file
+          yield "#{dir}/#{name}" if block_given?
+        else
           raise "File #{name} not found in zip archive #{@path}"
         end
       end
